@@ -19,15 +19,51 @@ This project is a full-stack email-based authentication system built using **Rea
 ## Project Structure
 
 ```
-email-auth-system/
-├── client/ # React frontend
-├── server/ # Node.js backend
-├── assets/ # Images used in README
-│   ├── architecture-diagram.png
-│   ├── sample-ui-login.png
-│   └── sample-email.png
-├── .env.example # Sample environment variables
-├── README.md
+Authify/
+│
+├── client/
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── assets/
+│   │   │   └── assets.js
+│   │   │   └── logo.png
+│   │   ├── context/
+│   │   │   └── AppContext.jsx
+│   │   ├── pages/
+│   │   │   └── Home.jsx
+│   │   │   └── Login.jsx
+│   │   │   └── Register.jsx
+│   │   │   └── EmailVerify.jsx
+│   │   │   └── ResetPassword.jsx
+│   │   │   └── Dashboard.jsx
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   ├── package.json
+│   ├── README.md
+│   └── .env
+│
+├── server/
+│   ├── config/
+│   │   └── mongodb.js
+│   │   └── nodemailer.js
+│   │   └── emailTemplate.js
+│   ├── controllers/
+│   │   └── authController.js
+│   ├── middleware/
+│   │   └── userAuth.js
+│   ├── models/
+│   │   └── userModel.js
+│   ├── routes/
+│   │   └── authRoutes.js
+│   │   └── userRoutes.js
+│   ├── server.js
+│   ├── package.json
+│   ├── package-lock.json
+│   └── .env
+│
+└── README.md
 ```
 
 ---
@@ -85,13 +121,13 @@ This diagram shows the high-level architecture of the entire authentication flow
 ## Sample Screenshots
 
 ### Login Page
-![Login UI](./client/src/assets/login.jpg)
+![Login UI](./client/src/assets/login.png)
 
 ### OTP Example
-![OTP Email](./client/src/assets/otp.jpg)
+![OTP Email](./client/src/assets/otp.png)
 
 ### OTP Mail 
-![Mail Example](./client/src/assets/email.jpg)
+![Mail Example](./client/src/assets/email.png)
 
 ---
 
