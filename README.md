@@ -129,6 +129,15 @@ This diagram shows the high-level architecture of the entire authentication flow
 ### OTP Mail 
 ![Mail Example](./client/src/assets/email.png)
 
+### Dashboard (Pre Login)
+![Dashboard PreLogin](./client/src/assets/Dashboard_PreLogin.png)
+
+### Dashboard (Post Login)
+![Dashboard PostLogin](./client/src/assets/Dashboard_PostLogin.png)
+
+### MongoDB UserModel
+![MongoDB UserModel](./client/src/assets/mongodb.png)
+
 ---
 
 ## Installation Guide
